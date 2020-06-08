@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.bxslider.js"></script>
+    <title>HomeTown</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/icons.css">
+    <link href="css/jquery.bxslider.css" rel="stylesheet" type="text/css">
+
+
+
+    <style>
+        #hero--image2 {
+            width: 88%;
+            background-size: cover;
+            background-position: bottom left;
+            background-image: url(./images/hometown/11.png);
+            background-repeat: no-repeat
+        }
+
+        @media (max-width: 991px) {
+            #hero--image2 {
+                width: 100%
+            }
+        }
+
+        @media (max-width: 575px) {
+            #hero--image2 {
+                background-position: bottom right 15%
+            }
+        }
+
+        #hero--image2 #hero--text {
+            margin: 0
+        }
+
+        #hero--image2 #hero--text svg {
+            position: absolute;
+            top: 33vh;
+            left: 5%;
+            width: 480px
+        }
+
+        @media all and (-ms-high-contrast: none) {
+            #hero--image2 #hero--text svg {
+                height: 275px !important
+            }
+        }
+
+        #hero--image2 #hero--text svg g {
+            opacity: 0
+        }
+
+        @media (max-width: 991px) {
+            #hero--image2 #hero--text svg {
+                top: 140px;
+                right: 0;
+                left: 0;
+                margin: auto;
+                width: 400px
+            }
+        }
+
+        @media (max-width: 575px) {
+            #hero--image2 #hero--text svg {
+                top: 22%;
+                width: 280px
+            }
+        }
+
+        @media (max-width: 400px) {
+            #hero--image2 #hero--text svg {
+                width: 240px
+            }
+        }
+
+        @media (max-width: 350px) {
+            #hero--image2 #hero--text svg {
+                width: 200px
+            }
+        }
+
+
+        #index #index--menu .bg {
+            background-image: url(./images/hometown/21.png);
+            width: 100%;
+            height: 480px;
+        }
+
+        /* 轮播图效果 */
+        .swiper-container {
+            margin-top: 40px;
+            width: 600px;
+            height: 300px;
+        }
+
+
+        .show {
+            background: #eee;
+            margin-top: 30px;
+            width: 500px;
+            height: 150px;
+            margin: 0 auto;
+        }
+
+
+        .text {
+
+            display: flex;
+            margin: 0 auto;
+            margin-top: 40px;
+            width: 1200px;
+            height: 300px;
+        }
+
+    </style>
+
+</head>
+<body>
+<header id="header" class="headroom headroom--not-bottom headroom--not-top headroom--unpinned">
+    <div id="header--bg">
+        <div class="d-flex align-items-center justify-content-between">
+
+            <div id="gnav">
+                <nav>
+                    <ul>
+                        <li><a href="/concept/"><span>Concept</span></a></li>
+                        <li><a href="/menu/"><span>Menu</span></a></li>
+                        <li><a href="/about/"><span>About</span></a></li>
+                        <li><a href="/gallery/"><span>Gallery</span></a></li>
+                        <li><a href="/recruit/"><span>Recruit</span></a></li>
+                        <li><a href="/contact/"><span>Contact</span></a></li>
+                        <li><img src="./images/logo.svg" width="30%"/></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+    </div>
+</header>
+<main id="index">
+    <div id="main--image" class="main--hometown active">
+        <div class="container">
+            <h2 id="main--text">hometown</h2>
+        </div>
+    </div>
+    <!-- <section id="index--news">
+        <div class="content-inner-lg-y">
+            <div class="container">
+                <div class="news-wrap">
+                    <div class="news-cat">
+                        <h3 class="title--primary">Artist</h3>
+                    </div>
+                    <div class="news-date">
+                        <time datetime="2020-05-07T17:50:52+09:00" data-scroll="" class="visible">2020.05.07</time>
+                    </div>
+                    <div class="news-title">
+                        <h4><a href="https://hairmada.com/news/555/">のえる     「一个人的日子」</a></h4>
+                    </div>
+                    <div class="news-more">
+                        <a href="/news/" class="btn btn-arrow-right">View more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <section id="index--menu">
+        <div class="content-inner-lg-y">
+            <div class="row align-items-end">
+                <div class="col-md-7">
+                    <div class="bg menu scrt-cover visible" data-scroll=""></div>
+                </div>
+                <div class="col-md-5">
+                    <div class="menu-body visible" data-scroll="">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 296.5 45.5">
+                            <defs>
+                                <style>.cls-1 {
+                                    font-size: 13px;
+                                    font-family: FZLTH;
+                                    letter-spacing: 0.3em;
+                                }</style>
+                            </defs>
+                            <g id="图层_2" data-name="图层 2">
+                                <g id="图层_1-2" data-name="图层 1">
+                                    <text class="cls-1" transform="translate(0 11.18)">五岳归来不看山 黄山归来不看岳
+                                        <tspan x="0" y="24">五岳は山を見ずに戻る黄山は山を見ないで戻る</tspan>
+                                    </text>
+                                </g>
+                            </g>
+                        </svg>
+                        <!--                        <h4 class="head scrt-to-left mb40 text-center text-md-left visible" data-scroll="">あなたに合わせたメニューで、<br>毎日が輝くようなスタイル創りを。</h4>-->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide" style="
+        z-index: 2;
+        background-size: cover;
+        background-image: url(./images/hometown/1.jpg);
+        background-repeat: no-repeat">
+        </div>
+        <div class="swiper-slide" style="
+        z-index: 2;
+        background-size: cover;
+        background-image: url(./images/hometown/2.jpg);
+        background-repeat: no-repeat"></div>
+        <div class="swiper-slide" style="
+        z-index: 2;
+        background-size: cover;
+        background-image: url(./images/hometown/3.jpg);
+        background-repeat: no-repeat"></div>
+        <div class="swiper-slide" style="
+        z-index: 2;
+        background-size: cover;
+        background-image: url(./images/hometown/4.jpg);
+        background-repeat: no-repeat"></div>
+    </div>
+    <!-- 分页器 -->
+    <div class="swiper-pagination"></div>
+
+    <!-- 导航按钮 -->
+
+
+    <!-- 滚动条 -->
+    <!-- <div class="swiper-scrollbar"></div> -->
+</div>
+
+
+<hr/>
+
+
+<div class="show" style="overflow:hidden;margin-top:30px;height:78px;">
+    <div style="margin-top:30px;margin-left:30px;margin-right:30px;">黄山以奇松、怪石、云海、温泉“四绝”著称于世</div>
+</div>
+<div class="show" style="margin-top:30px;overflow:hidden;">
+    <div style="margin-top:30px;margin-left:30px;margin-right:30px;">
+        黄山雄踞风景秀丽的安徽南部，是我国最著名的山岳风景区之一。黄山集名山之长：泰山之雄伟，华山之险峻，衡山之烟云，庐山之飞瀑，雁荡山之巧石，峨眉山之清凉。
+    </div>
+</div>
+
+<p>slider7(infiniteLoop hideControlOnEnd)</p>
+
+<div class="slider7">
+
+    <div class="slide"><img src="images/hometown/11.png"></divt
+
+    <div class="slide"><img src="images/hometown/21.png"></div>
+
+    <div class="slide"><img src="images/hometown/31.png"></div>
+
+</div>
+
+<script type="text/javascript">
+
+    $(document).ready(function(){
+
+        $('.slider7').bxSlider({
+
+            slideWidth: 600,
+
+            infiniteLoop: false,
+
+            hideControlOnEnd: true,
+
+            slideMargin: 10
+
+        });
+
+    });
+
+</script>
+
+<script type="text/javascript">
+
+    $(document).ready(function(){
+
+        $('.slider4').bxSlider({
+
+            slideWidth: 200,
+
+            minSlides: 2,
+
+            maxSlides: 3,
+
+            moveSlides: 1,
+
+            startSlide: 1,
+
+            slideMargin: 10
+
+        });
+
+    });
+
+</script>
+<!-- 引入的是第四个例子 -->
+
+<div class="text">
+    <div class="" style="
+      flex: 1;
+    text-align: left;">
+        <div style="width: 400px;margin-top: 50px;margin-left: 30px;">
+            <h3>屯溪区，是安徽省黄山市一个市辖区，位于安徽省南部。</h3>
+        </div>
+        <div style="width: 400px; margin-top: 40px; margin-left: 30px;">
+            <span>屯溪是新安文化的中心，孕育了享誉中外的徽商、徽菜、徽剧、徽派建筑、徽派盆景、新安医学、新安画派等，重点文物保护单位有戴震纪念馆、程大位故居及纪念馆、程氏三宅、老大桥等，屯溪老街为国家级历史文化保护区。</span>
+        </div>
+    </div>
+
+    <div class="" style="
+    flex: 1; 
+    background-size: cover;
+    background-image: url(./images/hometown/41.png);
+    background-repeat: no-repeat"></div>
+</div>
+<br/>
+<br/>
+
+
+<footer id="footer">
+    <div class="container pos-r">
+        <div class="ft--body">
+            <div class="row justify-content-between">
+                <div class="col-lg-5 order-lg-2">
+                    <div class="ft-contact">
+                        <div class="contact-body">
+                            <h3 class="title--primary mb40 visible" data-scroll="">Contact</h3>
+                            <p class="mb30">著名奶茶鉴定家。<br>国家精准扶贫项目重点帮扶对象。</p>
+                            <p><span>TEL:</span>139 6550 1155</p>
+                            <p><span>EMAIL:</span>806632876@qq.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <h4 class="ft-title scrt-fade mb40 visible" data-scroll=""><img src="./images/logo.svg"
+                                                                                    style="width: 30%"
+                                                                                    alt="Invincible Hair MADA"></h4>
+                    <div class="d-none d-lg-block">
+                        <div class="row mb60">
+                            <div class="col-lg-4">
+                                <ul class="ft-nav">
+                                    <li><a href="/concept/">Brand</a></li>
+                                    <li><a href="/About/">About</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4">
+                                <ul class="ft-nav">
+                                    <li><a href="/recruit/">Portfolio</a></li>
+                                    <li><a href="/contact/">Contact</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4">
+                                <ul class="ft-nav">
+                                    <li><a href="/news/">Hometown</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+</body>
+</html>

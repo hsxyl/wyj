@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<head>
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.bxslider.js"></script>
+    <title>HomeTown</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/icons.css">
+    <link href="css/jquery.bxslider.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<div class="bx-wrapper" style="max-width: 600px;">
+    <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 200px;">
+        <div class="slider7"
+             style="width: 615%; position: relative; transition-duration: 0s; transform: translate3d(0px, 0px, 0px);">
+
+            <div class="slide"
+                 style="float: left; list-style: none; position: relative; width: 600px; margin-right: 10px;"><img
+                    src="http://placehold.it/600x200&amp;text=FooBar1"></div>
+
+            <div class="slide"
+                 style="float: left; list-style: none; position: relative; width: 600px; margin-right: 10px;"><img
+                    src="http://placehold.it/600x200&amp;text=FooBar2"></div>
+
+            <div class="slide"
+                 style="float: left; list-style: none; position: relative; width: 600px; margin-right: 10px;"><img
+                    src="http://placehold.it/600x200&amp;text=FooBar3"></div>
+
+            <div class="slide"
+                 style="float: left; list-style: none; position: relative; width: 600px; margin-right: 10px;"><img
+                    src="http://placehold.it/600x200&amp;text=FooBar4"></div>
+
+        </div>
+    </div>
+<!--    <div class="bx-controls bx-has-pager bx-has-controls-direction">-->
+<!--        <div class="bx-pager bx-default-pager">-->
+<!--            <div class="bx-pager-item"><a href="" data-slide-index="0" class="bx-pager-link active">1</a></div>-->
+<!--            <div class="bx-pager-item"><a href="" data-slide-index="1" class="bx-pager-link">2</a></div>-->
+<!--            <div class="bx-pager-item"><a href="" data-slide-index="2" class="bx-pager-link">3</a></div>-->
+<!--            <div class="bx-pager-item"><a href="" data-slide-index="3" class="bx-pager-link">4</a></div>-->
+<!--        </div>-->
+<!--        <div class="bx-controls-direction">-->
+<!--            <a class="bx-prev disabled" href="">Prev</a>-->
+<!--            <a class="bx-next" href="">Next</a>-->
+<!--        </div>-->
+<!--    </div>-->
+</div>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+
+        $('.slider7').bxSlider({
+
+            slideWidth: 600,
+
+            infiniteLoop: false,
+
+            hideControlOnEnd: true,
+
+            slideMargin: 10
+
+        });
+
+    });
+
+</script>
+
+</body>
